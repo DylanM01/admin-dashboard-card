@@ -7,12 +7,14 @@
 body {
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 #wrapper {
     width: 1354px;
     height: 963px;
     display: flex;
+    background-color: white;
 }
 
 #sidebar {
@@ -36,4 +38,50 @@ body {
     font-weight: 550;
     font-size: 18px;
     cursor: pointer;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-header-top-half, #dashboard-header-bottom-half, #search, #profile {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+}
+
+
+#search-icon, #notification-bell-icon {
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#profile, #search {
+    display: flex;
+    align-items: center;
+}
+
+#header-image {
+    border-radius: 125px;
+    width: 65px;
+    border: 3px solid #363bb5;
+}
+
+#header-name {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#search-bar {
+    height: 35px;
+    border-radius: 100px;
+    border: 2px solid black;
+    width: 600px;
 }
