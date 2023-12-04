@@ -14,7 +14,7 @@ body {
     width: 1354px;
     height: 963px;
     display: flex;
-    background-color: white;
+    background-color: #d1d9e6;
 }
 
 #sidebar {
@@ -48,12 +48,20 @@ body {
 #dashboard-header {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 15px -1px #000000;
+    padding: 25px;
+    width: calc(100% + 100px);
+    gap: 25px;
 }
 
 #dashboard-header-top-half, #dashboard-header-bottom-half, #search, #profile {
     display: flex;
     gap: 25px;
-    padding: 25px;
+}
+
+#dashboard-header-top-half {
+    justify-content: space-between;
 }
 
 
@@ -70,7 +78,6 @@ body {
 #header-image {
     border-radius: 125px;
     width: 65px;
-    border: 3px solid #363bb5;
 }
 
 #header-name {
@@ -83,5 +90,51 @@ body {
     height: 35px;
     border-radius: 100px;
     border: 2px solid black;
-    width: 600px;
+    width: 607.5px;
+}
+
+#bottom-half-header-image {
+    width: 75px;
+    border-radius: 10em;
+}
+
+#profile-bottom-half {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+#hi-there, #dylan-mesho {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dashboard-header-bottom-half {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    background-color: #363bb5;
+    color: white;
+    padding: 25px;
+    height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons {
+    display: flex;
+    gap: 25px;
 }
